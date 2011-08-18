@@ -34,6 +34,7 @@ that can be merged back into the original project and maybe forked off if I
 am inspired to make incompatible changes for the better.
 
 Directions of this port include:
+
 - C compatible port
 - Integration into unix like tools, ala XZ is to 7Z.
 - Improvements in performance
