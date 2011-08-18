@@ -35,7 +35,7 @@ am inspired to make incompatible changes for the better.
 
 Directions of this port include:
 
-- C compatible port
+- C port
 - Integration into unix like tools, ala XZ is to 7Z.
 - Improvements in performance
 
