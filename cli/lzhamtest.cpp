@@ -61,7 +61,7 @@ typedef unsigned int uint32;
    typedef signed __int64        int64;
 #endif
 
-#ifdef _WIN64
+#if defined(_M_X64) || defined(__x86_64__)
    #define LZHAMTEST_MAX_POSSIBLE_DICT_SIZE LZHAM_MAX_DICT_SIZE_LOG2_X64
    // 256MB default dictionary size under x64 (max is 512MB, but this requires more than 4GB of physical memory without thrashing)
    #define LZHAMTEST_DEFAULT_DICT_SIZE 28
@@ -1323,7 +1323,7 @@ int main(int argc, char *argv[])
    DmMapDevkitDrive();
 #endif
 
-#ifdef _WIN64
+#if defined(_M_X64) || defined(__x86_64__)
    printf("LZHAM Codec - x64 Command Line Test App - Compiled %s %s\n", __DATE__, __TIME__);
 #else
    printf("LZHAM Codec - x86 Command Line Test App - Compiled %s %s\n", __DATE__, __TIME__);
